@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Personalidad Tarot</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Personalidad con Tarot</h1>
+        <form id="tarotForm">
+            <label for="birthdate">Fecha de Nacimiento:</label>
+            <input type="date" id="birthdate" required>
+            <button type="submit">Calcular</button>
+        </form>
+        <div id="result">
+            <h2>Tu Carta del Tarot:</h2>
+            <img id="tarotImage" alt="Imagen de la carta del tarot">
+            <p id="tarotDescription"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
