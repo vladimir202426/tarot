@@ -10,7 +10,7 @@ document.getElementById('tarotForm').addEventListener('submit', function(event) 
 function calculateTarotNumber(birthdate) {
     const date = new Date(birthdate);
     const day = date.getDate().toString();
-    const month = (date.getMonth() + 1).toString(); // Los meses son de 1-12
+    const month = (date.getMonth() + 1).toString(); // Los meses son de 0-11, así que sumamos 1
     const year = date.getFullYear().toString();
 
     // Sumar los dígitos de día, mes y año individualmente
