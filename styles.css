@@ -1,30 +1,61 @@
 body {
+    font-family: Arial, sans-serif;
     background: url('orion.jpg') no-repeat center center fixed;
     background-size: cover;
-    font-family: Arial, sans-serif;
-    color: white;
+    color: #fff;
 }
 
 .container {
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.7);
     padding: 20px;
     border-radius: 10px;
-    margin: 50px auto;
-    width: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
 }
 
 form {
     margin-bottom: 20px;
 }
 
+input[type="date"], button {
+    font-size: 1.2em;
+    padding: 10px;
+    margin: 10px 0;
+    width: calc(100% - 22px); /* Ajusta el ancho para márgenes */
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #5c2f8b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+button:hover {
+    background-color: #4a1e6f;
+}
+
 #result {
-    display: none;
     margin-top: 20px;
+    text-align: center;
 }
 
 #tarotImage {
-    width: 150px;
+    max-width: 100%;
     height: auto;
-    margin: 20px 0;
+    border-radius: 10px;
+}
+
+#tarotDescription, #calculationProcess {
+    margin-top: 20px;
+    font-size: 1em;
 }
