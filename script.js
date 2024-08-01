@@ -20,7 +20,10 @@ function calculateTarotNumber(birthdate) {
     while (sum > 22) {
         sum = sum.toString().split('').reduce((acc, num) => acc + parseInt(num), 0);
     }
-    
+
+    // Sumar 1 al resultado final
+    sum += 1;
+
     return sum;
 }
 
