@@ -21,6 +21,14 @@ function calculateTarotNumber(birthdate) {
         sum = sum.toString().split('').reduce((acc, num) => acc + parseInt(num), 0);
     }
     
+    // Sumar 1 al resultado final
+    sum = sum + 1;
+    
+    // Si el resultado es mayor a 22, reducirlo nuevamente
+    if (sum > 22) {
+        sum = sum.toString().split('').reduce((acc, num) => acc + parseInt(num), 0);
+    }
+    
     return sum;
 }
 
