@@ -13,10 +13,14 @@ function calculateTarotNumber(birthdate) {
     const month = date.getMonth() + 1; // Los meses son de 0-11
     const year = date.getFullYear();
 
-    let sum = day + month + year;
+    // Sumar los dígitos de día, mes y año individualmente
+    let sum = [...day.toString(), ...month.toString(), ...year.toString()].reduce((acc, num) => acc + parseInt(num), 0);
+    
+    // Reducir la suma hasta que sea menor o igual a 22
     while (sum > 22) {
         sum = sum.toString().split('').reduce((acc, num) => acc + parseInt(num), 0);
     }
+    
     return sum;
 }
 
